@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picturegram</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body onload="renderStoryBoard(), renderNewProfil(), renderFeed()">
+    <nav class="navbar">
+        <img class="logo" src="img/Picturegram.png">
+        <input id="search" onkeydown="search()" class="searchinput" type="search" placeholder="Suchen...">
+        <div>
+            <img class="iconsnavbar" src="img/icons8-außeneinrichtung-48.png">
+            <img class="iconsnavbar" src="img/icons8-gesendet-50.png">
+            <img class="iconsnavbar" src="img/icons8-kompass-50.png">
+            <img class="iconsnavbar" src="img/icons8-herzen-60.png">
+            <img class="imgprofilgradient" src="img/Alex.png">
+        </div>
+    </nav>
+    <div class="wrapper-body">
+        <div class="parent_container_feed">
+            <div class="container-story" id="storyboard">
+            </div>
+            <div id="feed">
+
+            </div>
+        </div>
+        <div class="parent_container_profil">
+            <div class="container_profil">
+                <img class="imgprofil" src="img/Alex.png">
+                <p class="name_profil">AlexVermeersch</p>
+                <p class="bluetext">Wechseln</p>
+            </div>
+            <div class="container_profil margin_top">
+                <span class="text_grey_bold700">Vorschläge für dich</span>
+                <span class="text12px">Alle ansehen</span>
+            </div>
+            <div id="newprofil">
+            </div>
+            <p class="copyright">
+                © 2022 Alex Vermeersch
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
